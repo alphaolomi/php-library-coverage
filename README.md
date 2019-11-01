@@ -14,8 +14,8 @@ $ composer require alphao/php-cover
 ## Usage
 
 ```php
-$app = new App\Cover();
-echo $skeleton->echoPhrase('Hello, League!');
+$example = new App\Cover\Example();
+echo $example->echoPhrase('Hello, League!');
 ```
 
 ## Change log
