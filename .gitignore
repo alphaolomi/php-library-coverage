@@ -1,4 +1,5 @@
-*.phar
+build
+composer.lock
 vendor
-.DS_Store
-venv
+phpcs.xml
+phpunit.xml
