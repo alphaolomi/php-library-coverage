@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace League\Skeleton;
+namespace App\Cover;
 
-class SkeletonClass
+class Example
 {
     /**
      * Create a new Skeleton Instance
