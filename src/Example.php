@@ -3,11 +3,13 @@
 declare(strict_types=1);
 
 namespace App\Cover;
-
+/**
+ * Example class
+ */
 class Example
 {
     /**
-     * Create a new Skeleton Instance
+     * Create a new Instance
      */
     public function __construct()
     {

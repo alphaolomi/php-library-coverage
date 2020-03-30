@@ -51,6 +51,11 @@ echo $example->echoPhrase('Hello, League!');
 composer test
 ```
 
+## Generate docs
+```
+./vendor/bin/phpdoc ./src -t ./docs
+```
+
 ## ⏩ Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently
