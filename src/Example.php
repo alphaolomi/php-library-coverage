@@ -10,7 +10,7 @@ class Example
 {
     /**
      * Create a new Instance
-     */
+     */f
     public function __construct()
     {
         // constructor body

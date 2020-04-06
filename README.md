@@ -24,7 +24,36 @@
   </a>
 </p>
 
-> A simple PHP Code
+## TOC
+
+Typed Properties
+Arrow Functions
+Limited Return Type Covariance and Argument Type Contravariance
+Unpacking Inside Arrays
+Numeric Literal Separator
+Weak References
+Allow Exceptions from `__toString()`
+Opcache Preloading
+Several Deprecations
+Extensions Removed from the Core
+
+## Why use Docker?
+I won't go into too much detail what Docker is and why you should use it, because others have already talked about this extensively.
+
+As for me, my main reasons were
+
+- Setup in the team involved a lot of work
+- I wanted to learn Docker for quite some time because you hear a lot about it
+
+## Links
+
+### General
+- https://www.php.net/releases/7_4_0.php
+- https://stitcher.io/blog/new-in-php-74
+
+### Docker
+- https://blog.jetbrains.com/phpstorm/2018/08/quickstart-with-docker-in-phpstorm/
+- https://www.pascallandau.com/blog/php-php-fpm-and-nginx-on-docker-in-windows-10/
 
 ### 🏠 [Homepage](https://github.com/alphaolomi/php-cover#readme)
 
