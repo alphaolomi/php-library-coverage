@@ -41,6 +41,9 @@ jobs:
                   method: "update"
                   # (optional) defaults to '--output-format=github --no-ansi --no-progress -v'
                   # cli-args: "--output-format=github --no-ansi --no-progress -v"
+            - name: Check if docs folder exists
+              run: |
+                  ls -lah
             - name: Upload artifacts
               uses: actions/upload-pages-artifact@v1
               with:
