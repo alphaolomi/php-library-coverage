@@ -38,7 +38,7 @@ jobs:
               uses: sudo-bot/action-doctum@v5
               with:
                   config-file: doctum-config.php
-                  method: "parse"
+                  method: "update"
                   # (optional) defaults to '--output-format=github --no-ansi --no-progress -v'
                   # cli-args: "--output-format=github --no-ansi --no-progress -v"
             - name: Upload artifacts
