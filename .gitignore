@@ -3,4 +3,7 @@ composer.lock
 vendor
 phpcs.xml
 phpunit.xml
-.phpunit.result.cache
+.phpunit.result.cache/
+docs/
+cache/
+doctum.php

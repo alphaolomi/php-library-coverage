@@ -2,23 +2,25 @@
 
 declare(strict_types=1);
 
-namespace App\Cover;
+namespace Alphaolomi\Library\Tests;
 
-class ExampleTest extends \PHPUnit\Framework\TestCase
+use Alphaolomi\Library\Example;
+use PHPUnit\Framework\TestCase;
+
+
+class ExampleTest extends TestCase
 {
-    /** @test   */
     public function testTrueIsTrue()
     {
         $this->assertTrue(true);
     }
 
-
-    /** @test   */
     public function testEchoPhrase()
     {
         $actual_phrase = 'Hello_League';
-        $app = new Example();
-        $expected =  $app->echoPhrase($actual_phrase);
+
+        $example = new Example();
+        $expected =  $example->echoPhrase($actual_phrase);
 
         $this->assertEquals(
             $expected,

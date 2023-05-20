@@ -2,12 +2,23 @@
 
 declare(strict_types=1);
 
-namespace App\Cover;
+namespace Alphaolomi\Library;
 
+/**
+ * An example class
+ * @author Alphaolomi
+ *
+ * example:
+ *
+ *     $example = new Example();
+ *     $example->echoPhrase('Hello, World!');
+ *
+ * @package Alphaolomi\Library
+ */
 class Example
 {
     /**
-     * Create a new Skeleton Instance
+     * Constructor
      */
     public function __construct()
     {
@@ -15,7 +26,7 @@ class Example
     }
 
     /**
-     * Friendly welcome
+     * Echoes a phrase
      *
      * @param string $phrase Phrase to return
      *

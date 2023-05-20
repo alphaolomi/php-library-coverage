@@ -1,0 +1,45 @@
+name: Build phpdocs
+
+on:
+    push:
+        branches: main
+        paths:
+            - "src/**/*.php"
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - name: Setup Pages
+              id: pages
+              uses: actions/configure-pages@v3
+            - name: Create a config file
+              run: |
+                  echo "<?php
+                  return new Doctum\Doctum('src', [
+                      'title' => 'My Project',
+                      'build_dir' => 'docs',
+                      'cache_dir' => 'cache',
+                  ]);" > doctum-config.php
+            - name: build doctum docs
+              uses: sudo-bot/action-doctum@v5
+              with:
+                  config-file: doctum-config.php
+                  method: "parse"
+                  # (optional) defaults to '--output-format=github --no-ansi --no-progress -v'
+                  # cli-args: "--output-format=github --no-ansi --no-progress -v"
+            - name: Upload artifacts
+              uses: actions/upload-pages-artifact@v1
+              with:
+                  path: "docs"
+    deploy:
+        environment:
+            name: "github-pages"
+            url: ${{ steps.deployment.outputs.page_url }}
+        runs-on: ubuntu-latest
+        needs: build
+        steps:
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v2
